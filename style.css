@@ -1,3 +1,4 @@
+
 body {
   background-color: #fcffdf;
 }
@@ -14,6 +15,7 @@ button {
 }
 
 h1 {
+  font-size: 60px;
   text-align: center;
   color: #46484c;
 }
@@ -190,4 +192,55 @@ h1 {
   color: #67b54b;
   font-weight: 600px;
   font-weight: bold;
+}
+
+@media (max-width: 575px) {
+  .navbar,
+  .actions {
+    display: none;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .main {
+    margin-top: 130px;
+  }
+
+  /** Media queries previos al banner **/
+  .banner > img {
+    width: 100%;
+  }
+
+  .publish > form {
+    flex-direction: column;
+  }
+
+  .publish > div {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .publish > form > div > input {
+    width: 65%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .explanatory-video > video {
+    width: 100%;
+  }
+
+  .publish {
+    margin-top: 10px;
+  }
+
+  .publish > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
 }
