@@ -5,40 +5,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="style.css">
 
+  <!-- Aquí van las otras etiquetas del head -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 
   <title>Matcha</title>
 </head>
 
 <body>
 
-  <header class="header">
-    <!-- Regresar página principal-->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fffbf7;">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="#">
+        <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Platform</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+        </ul>
 
-    <a href="/" class="logo">
-      <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="">
-    </a>
-
-    <!-- Menú-->
-    <nav class="navbar">
-      <!-- Acciones -->
-      <ul class="menu">
-        <li>Products</li>
-        <li>Templates</li>
-        <li>Pricing</li>
-        <li>Customers</li>
-        <li>Blog</li>
-        <li>Resources</li>
-      </ul>
-    </nav>
-
-    <div class="actions">
-      <a href="">Sign in</a>
-      <button>Start free trial</button>
+        <form class="form-inline my-2 my-lg-0 actions justify-content-end">
+          <div class="actions">
+            <a href="#">Sign In</a>
+            <button>Start Free Trial</button>
+          </div>
+        </form>
+      </div>
     </div>
-
-  </header>
+  </nav>
 
   <section class="main">
     <h1>Build your blog. Build your business.</h1>
