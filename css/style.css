@@ -118,6 +118,10 @@ h1 {
   align-items: center;
 }
 
+.texto-boton:hover {
+  background-color: #67b54b;
+}
+
 .explanatory-video {
   display: flex;
   flex-direction: column;
