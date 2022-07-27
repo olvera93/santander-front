@@ -21,7 +21,7 @@ for (const number of numbers) {
 
 }
 
-console.log('Doubled For of: ', promedio)
+//console.log('Doubled For of: ', promedio)
 
 
 
@@ -32,11 +32,11 @@ const john = {
     birthYear: 1990
 }
 
-console.log(john.firstName)
-console.log(john['lastName'])
+//console.log(john.firstName)
+//console.log(john['lastName'])
 
 john.firstName = 'Jane'
-console.log(john.firstName)
+//console.log(john.firstName)
 
 const car = {
     brand: 'Nissan', 
@@ -50,6 +50,44 @@ const pairs = []
 for (const key of keys) {
     pairs.push([key, car[key]])
 }
-console.log(pairs)
+//console.log(pairs)
+
+const auto = Object.fromEntries(pairs)
+console.log(auto)
+
+const auto2 = {}
+for (const pair of pairs) {
+    auto2[pair[0]] = pair[1]
+}
+
+console.log(auto2)
 
 
+// Destructuracion de objetos
+const primeros = [1, 2, 3]
+const segundos = [4, 5, 6]
+
+const todos = [...primeros, ...segundos]
+console.log(todos)
+
+const colors = ['red', 'green', 'blue']
+const [Red, Green, Blue] = colors
+
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    links: {
+      web: {
+        blog: 'https://johndoe.com'
+      }, 
+      social: {
+        facebook: 'https://facebook.com/john.doe',
+        instagram: 'https://instagram.com/john.doe'
+      } 
+    }
+  }
+
+const {links: {social: {facebook: fb, instagram: ig}}} = person
+
+console.log(fb)
+console.log(ig)
