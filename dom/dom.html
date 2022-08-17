@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejemplo de cambiar el DOM</title>
+</head>
+<body>
+
+    <p>One</p>
+    <p>Two</p>
+    <p>Three</p>
+    
+
+
+    <script>
+        const paragraphs = document.body.getElementsByTagName('p')
+        console.log(paragraphs)
+
+        console.log('Primer nodo', paragraphs[0])
+        console.log('Segundo nodo', paragraphs[1])
+        console.log('Tercer nodo', paragraphs.lastChild)
+
+
+        function createNode(type, child) {
+            const node = document.createTextNode(child)
+
+            if(typeof child === 'string') {
+                const text = document.createTextNode(child)
+                node.appendChild(text)
+            } else {
+                node.appendChild(child)
+            }
+
+            return node
+        }
+
+        console.log(createNode('h1', createNode('strong', 'Hello world2')))
+
+    </script>
+
+</body>
+</html>
