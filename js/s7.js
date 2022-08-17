@@ -128,3 +128,22 @@ function flatten(arrays) {
   const array2 = flatten(arrays);
   
   console.log(array2); // [1, 2, 3, 4, 5, 6]
+
+  function compact(array) {
+    // Code goes here
+    return array.filter((value) => !!value) 
+  }
+  
+  const array3 = [0, 1, false, 2, '', 3];
+  const compactedArray = compact(array3);
+  
+  console.log(compactedArray); // [1, 2, 3]
+
+
+  const arrayOf = [0, 1, 2, 3, 4, 5, 6, 6]
+
+  const sueEvens = arrayof.reduce(funtion(a,b) {
+    return b % 2===0? a+b:a
+  }, 1)
+
+    console.log(sueEvens)
